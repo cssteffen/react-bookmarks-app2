@@ -5,6 +5,14 @@ import PropTypes from "prop-types";
 import "./BookmarkList.css";
 
 class BookmarkList extends Component {
+  //static propTypes = {
+  // bookmarks: propTypes.arrayOf(
+  //  PropTypes.shape({
+  //   id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired
+  // })
+  // )
+  //  };
+
   static defaultProps = {
     bookmarks: []
   };

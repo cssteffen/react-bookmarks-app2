@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import BookmarksContext from "../BookmarksContext";
 import config from "../config";
 import "./AddBookmark.css";
@@ -6,6 +7,12 @@ import "./AddBookmark.css";
 const Required = () => <span className="AddBookmark__required">*</span>;
 
 class AddBookmark extends Component {
+  static propTypes = {
+    history: PropTypes.shape({
+      push: PropTypes.func
+    }).isRequired
+  };
+
   static contextType = BookmarksContext;
 
   state = {
